@@ -20,7 +20,7 @@ public class Estufa {
             case "Prepara":
                 alimentos.add(comida);
                 break;
-            case "Comida_Lista":
+            case "Comida Lista":
                 if(alimentos.contains(comida)){
                     int index =alimentos.indexOf(comida);
                     if(index != -1){
