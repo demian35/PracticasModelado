@@ -58,12 +58,7 @@ public class Estufa {
                 }else{
                     return false;
                 }
-
         }
         return false;
     }
-
-
-
-
 }
