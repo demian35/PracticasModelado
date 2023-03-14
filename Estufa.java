@@ -32,6 +32,12 @@ public class Estufa {
 
     }
 
+    public void calientaComida(){
+        for(Preparable preparable: alimentos){
+            preparable.preparaAlimento(90);
+        }
+    }
+
 
 
 
