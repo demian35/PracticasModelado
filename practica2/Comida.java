@@ -1,5 +1,4 @@
 package practica2;
-
 public class Comida implements Preparable {
 
     private float temp;
