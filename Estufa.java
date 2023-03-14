@@ -32,6 +32,7 @@ public class Estufa {
 
     }
 
+    //metodo que asigna temperatura a cada parrilla de la estufa
     public void calientaComida(){
         for(Preparable preparable: alimentos){
             preparable.preparaAlimento(90);
