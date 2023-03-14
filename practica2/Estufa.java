@@ -41,6 +41,28 @@ public class Estufa {
         }
     }
 
+    //metodo que consultara si la estifa este encendida o apagada
+    public boolean estadoEstufa(String estado){
+        switch(estado){
+            case("Braza encendida"):
+                if(brazaPrendida){
+                    return false;
+                }else{
+                    brazaPrendida=true;
+                    return true;
+                }
+            case("Braza apagada"):
+                if(brazaPrendida){
+                    brazaPrendida=false;
+                    return true;
+                }else{
+                    return false;
+                }
+
+        }
+        return false;
+    }
+
 
 
 
