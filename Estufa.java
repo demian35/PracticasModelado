@@ -10,6 +10,9 @@ public class Estufa {
         alimentos= new ArrayList<>();
     }
 
+    //Metodo que coloca los alimentos a calentar en la estufa y que los retira 
+    //recibimos como parametro un alimento preparable y una string que indica si un alimento esta en preparacion
+    //o ya esta listo
     public boolean actualizaParrillas(Preparable comida , String enPreparacion){
         switch(enPreparacion){
             case "Prepara":
@@ -28,6 +31,8 @@ public class Estufa {
         return false;
 
     }
+
+
 
 
 }
