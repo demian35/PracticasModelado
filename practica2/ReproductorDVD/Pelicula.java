@@ -2,14 +2,14 @@ package practica2.ReproductorDVD;
 
 public class Pelicula implements Reproducible {
     
-    private int time;
+    private String archivoMultimedia;
 
-    public Pelicula(int tiempoInicial){
-        time  = tiempoInicial;
+    public Pelicula(String archivoReproducible){
+        archivoMultimedia  = archivoReproducible;
     }
 
-    public void reproduceMultimedia(int time){
-        this.time +=time;
+    public void reproduceMultimedia(String archivoMultimedia){
+        this.archivoMultimedia =archivoMultimedia;
     }
     
 }
