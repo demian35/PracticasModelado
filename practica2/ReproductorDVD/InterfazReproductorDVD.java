@@ -7,19 +7,19 @@ public class InterfazReproductorDVD {
         this.reproductor=reproductor;
     }
 
-    public void inserteDisco(Reproducible archivo){
-        reproductor.insertaDisco(archivo,"Inserta disco");
+    public boolean inserteDisco(Reproducible archivo){
+       return reproductor.insertaDisco(archivo,"Inserta disco");
     }
 
-    public void expulsaDisco(Reproducible archivo){
-        reproductor.insertaDisco(archivo, "Expulsa");
+    public boolean expulsaDisco(Reproducible archivo){
+        return reproductor.insertaDisco(archivo, "Expulsa");
     }
 
-    public void dalePlay(){
-        reproductor.estadoReproduccion("reproduciendo");
+    public boolean dalePlay(){
+        return reproductor.estadoReproduccion("reproduciendo");
     }
 
-    public void dalePause(){
-        reproductor.estadoReproduccion("pausa");
+    public boolean dalePause(){
+       return reproductor.estadoReproduccion("pausa");
     }
 }
