@@ -40,6 +40,10 @@ public class Mochila {
         }    
     }
 
+    public static int MochilaDinamic(int W  ,int peso[] ,int ben[],int n){
+        return 0;
+    }
+
     public static void main(String[] args) {
 
         int tamaniobeneficio;
