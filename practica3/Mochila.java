@@ -6,7 +6,7 @@ public class Mochila {
      * Funcion que calcula el maxino de dos numeros recibiendo como parametros los numeros a comparar
      * 
      */
-    public static int maximo(int a,int b){
+    public int maximo(int a,int b){
         if(a>b){
             return a;
         }
@@ -20,7 +20,7 @@ public class Mochila {
      * @param int peso[] un arreglo en donde guardaermos los pesos
      * @param int ben[] arreglo donde se almacenara el beneficio/costo de u objeto
      */
-    public static int mochilaRecursivo(int W  ,int peso[] ,int ben[],int n){
+    public int mochilaRecursivo(int W  ,int peso[] ,int ben[],int n){
         //caso base
         if(W==0 || n==0){
             return 0;
