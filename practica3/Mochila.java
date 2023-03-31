@@ -6,7 +6,7 @@ public class Mochila {
      * Funcion que calcula el maxino de dos numeros recibiendo como parametros los numeros a comparar
      * 
      */
-    public int maximo(int a,int b){
+    public static int maximo(int a,int b){
         if(a>b){
             return a;
         }
@@ -20,7 +20,7 @@ public class Mochila {
      * @param int peso[] un arreglo en donde guardaermos los pesos
      * @param int ben[] arreglo donde se almacenara el beneficio/costo de u objeto
      */
-    public int mochilaRecursivo(int W  ,int peso[] ,int ben[],int n){
+    public static int mochilaRecursivo(int W  ,int peso[] ,int ben[],int n){
         //caso base
         if(W==0 || n==0){
             return 0;
@@ -32,9 +32,17 @@ public class Mochila {
          * 
          */
         if(peso[n-1]>W){
-            return mochilaRecursivo(W, peso, ben, n);
+            return mochilaRecursivo(W, peso, ben, n-1);
         }else{
-            return maximo(ben[n-1]+mochilaRecursivo(W-peso[n-1],peso,ben,n-1), mochilaRecursivo(W, peso, ben, n));
+            return maximo(ben[n-1]+mochilaRecursivo(W-peso[n-1],peso,ben,n-1), mochilaRecursivo(W, peso, ben, n-1));
         }    
+    }
+
+    public static void main(String[] args) {
+        int beneficio[]=new int[] {60,100,120};
+        int pesos[]= new int[] {10,20,30};
+        int W=50;
+        int n=beneficio.length;
+        System.out.println(mochilaRecursivo(W,pesos,beneficio,n));
     }
 }
