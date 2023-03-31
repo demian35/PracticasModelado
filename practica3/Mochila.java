@@ -44,6 +44,9 @@ public class Mochila {
         return 0;
     }
 
+    /*
+     * Metodo main para ejecutar el codigo
+     */
     public static void main(String[] args) {
 
         int tamaniobeneficio;
