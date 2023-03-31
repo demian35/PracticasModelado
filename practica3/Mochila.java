@@ -1,5 +1,7 @@
 package practica3;
 
+import java.util.Scanner;
+
 public class Mochila {
     
     /*
@@ -39,9 +41,27 @@ public class Mochila {
     }
 
     public static void main(String[] args) {
-        int beneficio[]=new int[] {60,100,120};
-        int pesos[]= new int[] {10,20,30};
-        int W=50;
+
+        int tamaniobeneficio;
+        int tamaniopesos;
+        int W;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("introduzca cuantos elementos desea meter (tamaño del arreglo)");
+        tamaniobeneficio=sc.nextInt();
+        int beneficio[]=new int[tamaniobeneficio];
+        System.out.println("Ingrese los valores de los valores de beneficio de los objetos de la mochila");
+        for(int i=0; i<beneficio.length;i++){
+            beneficio[i]=sc.nextInt();
+        }
+        System.out.println("introduzca cuantos elementos desea meter (tamaño del arreglo)");
+        tamaniopesos=sc.nextInt();
+        int pesos[]= new int[tamaniopesos];
+        System.out.println("Ingrese los valores de los pesos de los objetos de la mochila");
+        for(int i=0; i<beneficio.length;i++){
+            pesos[i]=sc.nextInt();
+        }
+        System.out.println("Ingrese el valor de la capacidad de la mochila");
+        W=sc.nextInt();
         int n=beneficio.length;
         System.out.println(mochilaRecursivo(W,pesos,beneficio,n));
     }
