@@ -105,7 +105,7 @@ archivo ClasesMVC.png
 ## Árbol de Carpetas
 
 ``` 
-───proyectoMyP
+───proyectoFinalMyP
    │   ClasesCommand.png
    │   diagramaCasosdeusoproyecto.png
    │   README.md
